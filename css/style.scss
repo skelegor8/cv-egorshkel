@@ -229,11 +229,16 @@ body{
 }
 
 
-//----skills----
-.page__section-skills-and-experience{
+// --- skills ---
+.page__section-skills-and-education{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.lang-and-skill{
+  gap: 35px 0;
+  display: flex;
+  flex-direction: column;
 }
 .page__container-skills{
   display: flex;
@@ -251,7 +256,6 @@ body{
 .skill__name {
   font-size: 25px;
   font-weight: 300;
-  
 }
 
 .skill__list {
@@ -269,11 +273,52 @@ body{
     background-color: var(--orange);
   }
 }
-// ------ Education ------
+// --- education ---
+.education-item {
+  font-weight: 300;
+  margin: 80px 0;
+}
+.education-item:first-child {
+
+}
+.educ-year {
+  font-size: 30px;
+  color: var(--orange);
+  &::first-letter{
+    color: var(--white);
+  }
+}
+.educ-name {
+  margin: 30px 0;
+  font-size: 30px;
+}
+.educ-spec {
+  font-size: 30px;
+  &::first-letter{
+    color: var(--orange);
+  }
+}
 
 
+// --- language ---
+.page__container-language{
 
-/*---------main---------*/
+}
+.language-item {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 15px 0;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-skill{
+  &::first-letter{
+    color: var(--orange);
+  }
+}
+
 
 /*---------footer---------*/
 .footer{
